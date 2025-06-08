@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1714642829 source:d:\ecen204-data structure and algorithms\project2- airport security check queue management system (linked lists)\airport security check queue management system\main.cpp
+	<iostream>
+	<string>
+	<limits>
+
