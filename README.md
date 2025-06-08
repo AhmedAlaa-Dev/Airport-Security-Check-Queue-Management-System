@@ -1,9 +1,6 @@
-```markdown
+
 # Airport Security Check Queue Management System
-
-![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg) ![OOP](https://img.shields.io/badge/Object%20Oriented-Yes-green.svg) ![License](https://img.shields.io/badge/License-MIT-orange.svg)
-
-## 📝 Project Description
+## Project Description
 A C++ queue management system for airport security that prioritizes passengers (Regular=1/Business=2/Special Needs=3) using linked lists. Features include:
 - Add/remove passengers with validation
 - Sort by priority/flight#/name
@@ -12,13 +9,14 @@ A C++ queue management system for airport security that prioritizes passengers (
 - Full passenger data modification
 - Activity logging
 
-## 🚀 Features
+## Features
 **Core Operations:**
 - Priority handling with automatic counters
 - Input validation for all entries
 - Linked list memory management
 
-**Sorting Algorithms:**
+
+## Sorting Algorithms:
 ```cpp
 // Insertion Sort (Priority)
 if (sortedHead == nullptr || currentSelectedNode->Priority > sortedHead->Priority) {
@@ -50,25 +48,25 @@ auto merge = [](passenger* left, passenger* right) -> passenger* {
 };
 ```
 
-**Search System:**
+## Search System:
 - Name (regex validated)
 - Flight number (numeric)
 - Priority level (1-3)
 - Queue position
 
-**Statistics:**
+## Statistics:
 - Priority distribution counts
 - Average waiting position:
 ```cpp
 float average_waiting_time = static_cast<double>(sum) / passengers_number;
 ```
 
-**Modification:**
+## Modification:
 - Name (alphabetic only)
 - Flight# (positive integers)
 - Priority (with counter updates)
 
-## 🛠️ Technical Implementation
+## Technical Implementation
 **Validation:**
 ```cpp
 // Name validation
@@ -89,7 +87,7 @@ while(true) {
 }
 ```
 
-**Structure:**
+## Structure:
 ```
 CLASS: passengerList
 ├── head: passenger*
@@ -111,7 +109,8 @@ STRUCT: passenger
 └── next: passenger*
 ```
 
-## 🔧 Usage
+## Usage
+ The whole code is inside `Airport Security Check Queue Management System.cpp`
 1. Compile: `g++ -std=c++17 main.cpp -o AirportQueue`
 2. Run: `./AirportQueue`
 3. Menu Options:
